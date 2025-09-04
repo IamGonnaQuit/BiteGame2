@@ -1,41 +1,21 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Hazard : MonoBehaviour
 {
-    public int damageAmount = 10;
-    public bool isActive = true;   // hazard starts active by default
-    [SerializeField] private float minTime = 3f;
-    [SerializeField] private float maxTime = 4f;
+    public int damageAmount = 10; 
+    public string targetTag = "Player"; 
 
-    private void Start()
+    private void OnTriggerEnter(Collider other)
     {
-        StartCoroutine(ToggleRoutine());
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (!isActive) return; // do nothing if hazard is "off"
-
-        BloodMeter dmg = other.GetComponent<BloodMeter>();
-        if (dmg != null)
+        if (other.CompareTag(targetTag))
         {
-            dmg.DealingDamage(damageAmount); // make sure your BloodMeter has this method
-        }
-    }
+            BloodMeter dmg = other.GetComponent<BloodMeter>();
 
-    private System.Collections.IEnumerator ToggleRoutine()
-    {
-        while (true)
-        {
-            // flip active state
-            isActive = !isActive;
-
-            // (optional) make the object visually disappear when inactive
-            gameObject.GetComponent<SpriteRenderer>().enabled = isActive;
-
-            // wait random 3–4 seconds
-            float waitTime = Random.Range(minTime, maxTime);
-            yield return new WaitForSeconds(waitTime);
+            if (dmg != null)
+            {
+                dmg.DealingDamage(damageAmount);
+            }
         }
     }
 }
