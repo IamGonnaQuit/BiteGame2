@@ -303,6 +303,9 @@ MonoBehaviour:
   isActive: 1
   minTime: 2
   maxTime: 7
+  fan1: {fileID: 0}
+  fan2: {fileID: 0}
+  sprite: {fileID: 0}
 --- !u!61 &304210307
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1023,11 +1026,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7677415424800277, guid: c9542d6dc5811fc47826d6fc202118c1, type: 3}
       propertyPath: m_LocalScale.x
-      value: 7.63
+      value: 0.7657251
       objectReference: {fileID: 0}
     - target: {fileID: 7677415424800277, guid: c9542d6dc5811fc47826d6fc202118c1, type: 3}
       propertyPath: m_LocalScale.y
-      value: 3.3265145
+      value: 0.7644625
       objectReference: {fileID: 0}
     - target: {fileID: 7677415424800277, guid: c9542d6dc5811fc47826d6fc202118c1, type: 3}
       propertyPath: m_LocalScale.z
@@ -1035,11 +1038,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7677415424800277, guid: c9542d6dc5811fc47826d6fc202118c1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.03
+      value: 3.2006
       objectReference: {fileID: 0}
     - target: {fileID: 7677415424800277, guid: c9542d6dc5811fc47826d6fc202118c1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.05
+      value: -1.7697
       objectReference: {fileID: 0}
     - target: {fileID: 7677415424800277, guid: c9542d6dc5811fc47826d6fc202118c1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1085,9 +1088,41 @@ PrefabInstance:
       propertyPath: minTime
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3635882551125948207, guid: c9542d6dc5811fc47826d6fc202118c1, type: 3}
+      propertyPath: m_Size.x
+      value: 10.038636
+      objectReference: {fileID: 0}
+    - target: {fileID: 3635882551125948207, guid: c9542d6dc5811fc47826d6fc202118c1, type: 3}
+      propertyPath: m_Size.y
+      value: 5.1260843
+      objectReference: {fileID: 0}
+    - target: {fileID: 3635882551125948207, guid: c9542d6dc5811fc47826d6fc202118c1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3635882551125948207, guid: c9542d6dc5811fc47826d6fc202118c1, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.1233201
+      objectReference: {fileID: 0}
+    - target: {fileID: 3635882551125948207, guid: c9542d6dc5811fc47826d6fc202118c1, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.0157485
+      objectReference: {fileID: 0}
+    - target: {fileID: 3635882551125948207, guid: c9542d6dc5811fc47826d6fc202118c1, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 10.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 3635882551125948207, guid: c9542d6dc5811fc47826d6fc202118c1, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 5.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 5876150451828736949, guid: c9542d6dc5811fc47826d6fc202118c1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8605956544606621573, guid: 7b2627639dce76d43beb489ee7fd0fd8, type: 3}
     - target: {fileID: 5876150451828736949, guid: c9542d6dc5811fc47826d6fc202118c1, type: 3}
       propertyPath: m_Color.a
-      value: 0.105882354
+      value: 0.9490196
       objectReference: {fileID: 0}
     - target: {fileID: 5876150451828736949, guid: c9542d6dc5811fc47826d6fc202118c1, type: 3}
       propertyPath: m_Color.b
@@ -1177,6 +1212,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6c0ac2a38eb4ad4188fc4943f988871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  sound: {fileID: 0}
   SuckingBlood: {fileID: 488088494}
 --- !u!212 &1055585552
 SpriteRenderer:
@@ -1283,6 +1320,9 @@ MonoBehaviour:
   isActive: 1
   minTime: 3
   maxTime: 4
+  fan1: {fileID: 0}
+  fan2: {fileID: 0}
+  sprite: {fileID: 0}
 --- !u!61 &1179800062
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1928,6 +1968,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6c0ac2a38eb4ad4188fc4943f988871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  sound: {fileID: 0}
   SuckingBlood: {fileID: 488088494}
 --- !u!212 &1900024462
 SpriteRenderer:
