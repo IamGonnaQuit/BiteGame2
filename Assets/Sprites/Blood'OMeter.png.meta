@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e94125c0a0882344daccda320ccb09f9
+guid: 5b39d60093b38934e89312d1f10a2f7e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5110853895368275435
-    second: Fan2_0
+      213: -9138082113897969111
+    second: Blood'OMeter_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +96,43 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fan2_0
+      name: Blood'OMeter_0
       rect:
         serializedVersion: 2
-        x: 265
-        y: 113
-        width: 554
-        height: 1631
+        x: 115
+        y: 70
+        width: 1663
+        height: 814
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: be5f8541a866de640800000000000000
-      internalID: 5110853895368275435
+      spriteID: 92ac2c8abb20f2180800000000000000
+      internalID: -9138082113897969111
       vertices: []
       indices: 
       edges: []
@@ -134,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Blood'OMeter_0: -9138082113897969111
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
