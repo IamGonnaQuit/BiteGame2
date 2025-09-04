@@ -175,6 +175,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1433637131050695165, guid: c9542d6dc5811fc47826d6fc202118c1, type: 3}
+      propertyPath: damageAmount
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 3635882551125948207, guid: c9542d6dc5811fc47826d6fc202118c1, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -331,7 +335,7 @@ MonoBehaviour:
   angry_Mod: 1.1
   max_Angry: 100
   blood: {fileID: 488088496}
-  calm_Mod: 0.5
+  calm_Mod: 0.2
   suck_anger: {fileID: 488088494}
 --- !u!114 &488088496
 MonoBehaviour:
@@ -346,7 +350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 0
-  zone_Modifier: 1
+  zone_Modifier: 1.5
   max_Points: 200
   suck: {fileID: 488088494}
 --- !u!1 &1055585549
