@@ -273,6 +273,18 @@ PrefabInstance:
       value: Square
       objectReference: {fileID: 0}
     - target: {fileID: 5069945077758736703, guid: 3160cabb224827a438e8957cfcdfa006, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5069945077758736703, guid: 3160cabb224827a438e8957cfcdfa006, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5069945077758736703, guid: 3160cabb224827a438e8957cfcdfa006, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5069945077758736703, guid: 3160cabb224827a438e8957cfcdfa006, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.93
       objectReference: {fileID: 0}
@@ -311,6 +323,18 @@ PrefabInstance:
     - target: {fileID: 5069945077758736703, guid: 3160cabb224827a438e8957cfcdfa006, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6779855224366822466, guid: 3160cabb224827a438e8957cfcdfa006, type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6779855224366822466, guid: 3160cabb224827a438e8957cfcdfa006, type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6779855224366822466, guid: 3160cabb224827a438e8957cfcdfa006, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
