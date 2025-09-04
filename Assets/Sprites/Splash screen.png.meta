@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e94125c0a0882344daccda320ccb09f9
+guid: 823667b435dec5b42bf310a6e35b997d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5110853895368275435
-    second: Fan2_0
+      213: -4686667516558731933
+    second: Splash screen_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fan2_0
+      name: Splash screen_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1080
-        height: 1920
+        width: 1680
+        height: 1050
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: be5f8541a866de640800000000000000
-      internalID: 5110853895368275435
+      spriteID: 365972789bc95feb0800000000000000
+      internalID: -4686667516558731933
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Fan2_0: 5110853895368275435
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
