@@ -4,7 +4,7 @@ public class AngerMeter : MonoBehaviour
 {
     [SerializeField] private float angry_Points;
     [SerializeField] private float angry_Mod = 1.1f;
-    [SerializeField] private float max_Angry = 100f;
+    [SerializeField] private float max_Angry = 50f;
     [SerializeField] private BloodMeter blood;
     //[SerializeField] private ProxAnger angry;
     [SerializeField] private float calm_Mod = 0.2f;
