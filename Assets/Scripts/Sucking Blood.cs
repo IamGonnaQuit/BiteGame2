@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class SuckingBlood : MonoBehaviour
 {
-    private bool Sucking = false;
+    public bool Sucking = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -31,6 +31,6 @@ public class SuckingBlood : MonoBehaviour
     }
     public void SuckingFunction()
     {
-
+        Sucking = true;
     }
 }
