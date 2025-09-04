@@ -6,6 +6,7 @@ public class AngerMeter : MonoBehaviour
     [SerializeField] private float angry_Mod = 1.1f;
     [SerializeField] private float max_Angry = 100f;
     [SerializeField] private BloodMeter blood;
+    [SerializeField] private float calm_Mod = 0.5f;
     void Start()
     {
         blood = GetComponent<BloodMeter>();
@@ -18,6 +19,17 @@ public class AngerMeter : MonoBehaviour
         if (blood.Sucking)
         {
             angry_Points = 1 * angry_Mod * Time.deltaTime;
+            Debug.Log("Anger going up");
+        }
+        else
+        {
+            angry_Points -= calm_Mod;
+            Debug.Log("Calming down");
+        }
+        if (angry_Points == max_Angry)
+        {
+            blood.DealingDamage(max_Angry / 2);
+            Debug.Log("Splat");
         }
     }
 }
