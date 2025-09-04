@@ -222,8 +222,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageAmount: 10
   isActive: 1
-  minTime: 3
-  maxTime: 8
+  minTime: 2
+  maxTime: 7
 --- !u!61 &304210307
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -584,6 +584,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1433637131050695165, guid: c9542d6dc5811fc47826d6fc202118c1, type: 3}
+      propertyPath: maxTime
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1433637131050695165, guid: c9542d6dc5811fc47826d6fc202118c1, type: 3}
+      propertyPath: minTime
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5876150451828736949, guid: c9542d6dc5811fc47826d6fc202118c1, type: 3}
       propertyPath: m_Color.a
       value: 0.105882354
@@ -780,8 +788,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageAmount: 10
   isActive: 1
-  minTime: 2
-  maxTime: 6
+  minTime: 3
+  maxTime: 4
 --- !u!61 &1179800062
 BoxCollider2D:
   m_ObjectHideFlags: 0
