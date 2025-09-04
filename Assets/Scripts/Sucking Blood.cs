@@ -3,6 +3,7 @@ using UnityEngine;
 public class SuckingBlood : MonoBehaviour
 {
     public bool Sucking = false;
+    public bool Suckable = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -12,25 +13,22 @@ public class SuckingBlood : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(0))
-        {
-            Sucking = true;
+        if (Suckable) { 
+            SuckingFunction();
         } else
         {
             Sucking = false;
         }
-        if (Sucking)
-        {
-            SuckingFunction();
-            Debug.Log("We are sucking baby");
-        }
-        else
-        {
-            Debug.Log("We aren't sucking man");
-        }
     }
     public void SuckingFunction()
     {
-        Sucking = true;
+        if (Input.GetMouseButton(0))
+        {
+            Sucking = true;
+            Debug.Log("You are currently sucking");
+        } else
+        {
+            Sucking = false;
+        }
     }
 }
