@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 
 public class BloodMeter : MonoBehaviour
 {
@@ -25,6 +26,7 @@ public class BloodMeter : MonoBehaviour
         if (points <= 0)
         {
             Debug.Log("Splat");
+            SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
         }
     }
     public void DealingDamage(float dmg)
