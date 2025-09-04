@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using TMPro;
 public class AngerMeter : MonoBehaviour
 {
     [SerializeField] private float angry_Points;
@@ -9,6 +9,7 @@ public class AngerMeter : MonoBehaviour
     //[SerializeField] private ProxAnger angry;
     [SerializeField] private float calm_Mod = 0.2f;
     [SerializeField] private SuckingBlood suck_anger;
+    [SerializeField] private TMP_Text Meteranger;
     void Start()
     {
         blood = GetComponent<BloodMeter>();
@@ -36,5 +37,6 @@ public class AngerMeter : MonoBehaviour
             blood.DealingDamage(max_Angry / 2);
             Debug.Log("Splat");
         }
+        Meteranger.text = angry_Points.ToString("F1");
     }
 }
