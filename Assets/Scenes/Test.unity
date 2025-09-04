@@ -303,6 +303,9 @@ MonoBehaviour:
   isActive: 1
   minTime: 2
   maxTime: 7
+  fan1: {fileID: 0}
+  fan2: {fileID: 0}
+  sprite: {fileID: 0}
 --- !u!61 &304210307
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1078,6 +1081,18 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1433637131050695165, guid: c9542d6dc5811fc47826d6fc202118c1, type: 3}
+      propertyPath: fan1
+      value: 
+      objectReference: {fileID: 8714079227698638165, guid: 7d1883772aa9b63419197970ffda7f18, type: 3}
+    - target: {fileID: 1433637131050695165, guid: c9542d6dc5811fc47826d6fc202118c1, type: 3}
+      propertyPath: fan2
+      value: 
+      objectReference: {fileID: 5110853895368275435, guid: e94125c0a0882344daccda320ccb09f9, type: 3}
+    - target: {fileID: 1433637131050695165, guid: c9542d6dc5811fc47826d6fc202118c1, type: 3}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: 721339561}
+    - target: {fileID: 1433637131050695165, guid: c9542d6dc5811fc47826d6fc202118c1, type: 3}
       propertyPath: maxTime
       value: 8
       objectReference: {fileID: 0}
@@ -1283,6 +1298,9 @@ MonoBehaviour:
   isActive: 1
   minTime: 3
   maxTime: 4
+  fan1: {fileID: 0}
+  fan2: {fileID: 0}
+  sprite: {fileID: 0}
 --- !u!61 &1179800062
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -39,7 +39,8 @@ public class Hazard : MonoBehaviour
             yield return new WaitForSeconds(waitTime);
             if (waitTime < 2)
             {
-
+                if (sprite.sprite = fan2) { sprite.sprite = fan1;}
+                if (sprite.sprite = fan1) { sprite.sprite = fan2;}
             }
         }
     }
