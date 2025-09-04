@@ -6,12 +6,13 @@ public class Hazard : MonoBehaviour
     public bool isActive = true;   // hazard starts active by default
     [SerializeField] private float minTime = 3f;
     [SerializeField] private float maxTime = 4f;
-
+    [SerializeField] private Sprite fan1;
+    [SerializeField] private Sprite fan2;
+    [SerializeField] private SpriteRenderer sprite;
     private void Start()
     {
         StartCoroutine(ToggleRoutine());
     }
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!isActive) return; // do nothing if hazard is "off"
@@ -36,6 +37,10 @@ public class Hazard : MonoBehaviour
             // wait random 3–4 seconds
             float waitTime = Random.Range(minTime, maxTime);
             yield return new WaitForSeconds(waitTime);
+            if (waitTime < 2)
+            {
+
+            }
         }
     }
 }

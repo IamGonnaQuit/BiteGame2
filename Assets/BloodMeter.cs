@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class BloodMeter : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class BloodMeter : MonoBehaviour
     [SerializeField] private float zone_Modifier = 1.1f;
     [SerializeField] private float max_Points = 200f;
     [SerializeField] private SuckingBlood suck;
+    [SerializeField] private TMP_Text bloodScore;
     void Start()
     {
         points = 20f;
@@ -28,6 +30,7 @@ public class BloodMeter : MonoBehaviour
             Debug.Log("Splat");
             SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
         }
+        bloodScore.text = points.ToString("F1");
     }
     public void DealingDamage(float dmg)
     {
