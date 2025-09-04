@@ -25,6 +25,7 @@ public class BloodMeter : MonoBehaviour
         if (points <= 0)
         {
             Debug.Log("Splat");
+            Destroy(this);
         }
     }
     public void DealingDamage(float dmg)
