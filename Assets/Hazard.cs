@@ -10,11 +10,11 @@ public class Hazard : MonoBehaviour
     {
         if (other.CompareTag(targetTag))
         {
-            BloodMeter bloodMeter = other.GetComponent<BloodMeter>();
+            BloodMeter dmg = other.GetComponent<BloodMeter>();
 
-            if (bloodMeter != null)
+            if (dmg != null)
             {
-                bloodMeter.DealingDamage(damageAmount);
+                dmg.DealingDamage(damageAmount);
             }
         }
     }
