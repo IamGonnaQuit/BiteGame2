@@ -103,7 +103,7 @@ TextureImporter:
       name: Person_0
       rect:
         serializedVersion: 2
-        x: 2
+        x: 3
         y: 0
         width: 459
         height: 433
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Person_0: -2634799857069279492
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
