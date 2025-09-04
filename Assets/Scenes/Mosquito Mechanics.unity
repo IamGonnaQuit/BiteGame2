@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 544595971}
   m_Layer: 0
   m_Name: Sucking Zone
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -242,8 +242,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.49999997
+  m_Offset: {x: -0.035920512, y: 0}
+  m_Radius: 3.086326
 --- !u!114 &544595972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -257,17 +257,56 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SuckingBlood: {fileID: 1528474371}
+--- !u!1 &627372154 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2166177267428719747, guid: 3160cabb224827a438e8957cfcdfa006, type: 3}
+  m_PrefabInstance: {fileID: 114503192068364626}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1528474371 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7101712187769508276, guid: 3160cabb224827a438e8957cfcdfa006, type: 3}
   m_PrefabInstance: {fileID: 114503192068364626}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 627372154}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e5898dbf1400ede4ba67027200a4738e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1528474377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627372154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a35001f2182c544bb5f9bc0dc10ed25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 0
+  zone_Modifier: 1
+  max_Points: 200
+  suck: {fileID: 1528474371}
+--- !u!114 &1528474378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627372154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45d2a4d8f8b9d794a986b5e477cbae45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  angry_Points: 0
+  angry_Mod: 1.1
+  max_Angry: 100
+  blood: {fileID: 1528474377}
+  calm_Mod: 0.5
+  suck_anger: {fileID: 1528474371}
 --- !u!1 &1795134385
 GameObject:
   m_ObjectHideFlags: 0
@@ -421,13 +460,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Square
       objectReference: {fileID: 0}
+    - target: {fileID: 2166177267428719747, guid: 3160cabb224827a438e8957cfcdfa006, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 3139823609945820615, guid: 3160cabb224827a438e8957cfcdfa006, type: 3}
       propertyPath: m_Mass
       value: 0.0001
       objectReference: {fileID: 0}
     - target: {fileID: 3139823609945820615, guid: 3160cabb224827a438e8957cfcdfa006, type: 3}
       propertyPath: m_BodyType
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3139823609945820615, guid: 3160cabb224827a438e8957cfcdfa006, type: 3}
       propertyPath: m_GravityScale
@@ -504,7 +547,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2166177267428719747, guid: 3160cabb224827a438e8957cfcdfa006, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1528474377}
+    - targetCorrespondingSourceObject: {fileID: 2166177267428719747, guid: 3160cabb224827a438e8957cfcdfa006, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1528474378}
   m_SourcePrefab: {fileID: 100100000, guid: 3160cabb224827a438e8957cfcdfa006, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
